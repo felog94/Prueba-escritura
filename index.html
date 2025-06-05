@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Prueba de Escritura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Prueba de Escritura</h1>
+
+        <div class="test-area">
+            <p id="quote-display" class="quote-display">
+                </p>
+            <textarea id="quote-input" class="quote-input" placeholder="Comienza a escribir aquí..." autofocus disabled></textarea>
+        </div>
+
+        <div class="result-area">
+            <div class="metric">
+                Tiempo: <span id="timer">0s</span>
+            </div>
+            <div class="metric">
+                WPM: <span id="wpm">0</span>
+            </div>
+            <div class="metric">
+                Errores: <span id="errors">0</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-button" class="btn start-btn">Iniciar Prueba</button>
+            <button id="reset-button" class="btn reset-btn">Reiniciar</button>
+        </div>
+
+        <p id="message" class="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
